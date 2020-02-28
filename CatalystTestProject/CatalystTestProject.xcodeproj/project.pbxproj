@@ -23,7 +23,20 @@
 		8C56355F2409199200C86218 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5635552409199200C86218 /* RxCocoa.framework */; };
 		8C5635602409199200C86218 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5635562409199200C86218 /* RxSwift.framework */; };
 		8C5635612409199200C86218 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5635572409199200C86218 /* RxBlocking.framework */; };
+		8C56356D24092A1000C86218 /* TestFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C56356B24092A1000C86218 /* TestFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C56357024092A1000C86218 /* TestFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C56356924092A1000C86218 /* TestFramework.framework */; };
+		8C56357124092A1000C86218 /* TestFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8C56356924092A1000C86218 /* TestFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C56356E24092A1000C86218 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C5634C42408DAAE00C86218 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C56356824092A1000C86218;
+			remoteInfo = TestFramework;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		8C5635482409029D00C86218 /* CopyFiles */ = {
@@ -32,6 +45,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				8C56357124092A1000C86218 /* TestFramework.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +71,9 @@
 		8C5635552409199200C86218 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = "<group>"; };
 		8C5635562409199200C86218 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
 		8C5635572409199200C86218 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxBlocking.framework; sourceTree = "<group>"; };
+		8C56356924092A1000C86218 /* TestFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C56356B24092A1000C86218 /* TestFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFramework.h; sourceTree = "<group>"; };
+		8C56356C24092A1000C86218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +84,16 @@
 				8C5635602409199200C86218 /* RxSwift.framework in Frameworks */,
 				8C5635612409199200C86218 /* RxBlocking.framework in Frameworks */,
 				8C56355F2409199200C86218 /* RxCocoa.framework in Frameworks */,
+				8C56357024092A1000C86218 /* TestFramework.framework in Frameworks */,
 				8C56355A2409199200C86218 /* RxTest.framework in Frameworks */,
 				8C5635582409199200C86218 /* RxRelay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C56356624092A1000C86218 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				8C5634CE2408DAAE00C86218 /* CatalystTestProject */,
+				8C56356A24092A1000C86218 /* TestFramework */,
 				8C5634CD2408DAAE00C86218 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				8C5634CC2408DAAE00C86218 /* CatalystTestProject.app */,
+				8C56356924092A1000C86218 /* TestFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,7 +152,27 @@
 			path = Carthage/Build/Mac;
 			sourceTree = SOURCE_ROOT;
 		};
+		8C56356A24092A1000C86218 /* TestFramework */ = {
+			isa = PBXGroup;
+			children = (
+				8C56356B24092A1000C86218 /* TestFramework.h */,
+				8C56356C24092A1000C86218 /* Info.plist */,
+			);
+			path = TestFramework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8C56356424092A1000C86218 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C56356D24092A1000C86218 /* TestFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		8C5634CB2408DAAE00C86218 /* CatalystTestProject */ = {
@@ -140,11 +187,30 @@
 			buildRules = (
 			);
 			dependencies = (
+				8C56356F24092A1000C86218 /* PBXTargetDependency */,
 			);
 			name = CatalystTestProject;
 			productName = CatalystTestProject;
 			productReference = 8C5634CC2408DAAE00C86218 /* CatalystTestProject.app */;
 			productType = "com.apple.product-type.application";
+		};
+		8C56356824092A1000C86218 /* TestFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C56357224092A1000C86218 /* Build configuration list for PBXNativeTarget "TestFramework" */;
+			buildPhases = (
+				8C56356424092A1000C86218 /* Headers */,
+				8C56356524092A1000C86218 /* Sources */,
+				8C56356624092A1000C86218 /* Frameworks */,
+				8C56356724092A1000C86218 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestFramework;
+			productName = TestFramework;
+			productReference = 8C56356924092A1000C86218 /* TestFramework.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -157,6 +223,9 @@
 				ORGANIZATIONNAME = Dawon;
 				TargetAttributes = {
 					8C5634CB2408DAAE00C86218 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					8C56356824092A1000C86218 = {
 						CreatedOnToolsVersion = 11.0;
 					};
 				};
@@ -175,6 +244,7 @@
 			projectRoot = "";
 			targets = (
 				8C5634CB2408DAAE00C86218 /* CatalystTestProject */,
+				8C56356824092A1000C86218 /* TestFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -195,6 +265,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8C56356724092A1000C86218 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -208,7 +285,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8C56356524092A1000C86218 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C56356F24092A1000C86218 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C56356824092A1000C86218 /* TestFramework */;
+			targetProxy = 8C56356E24092A1000C86218 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8C5634D52408DAAE00C86218 /* Main.storyboard */ = {
@@ -351,7 +443,6 @@
 				CODE_SIGN_ENTITLEMENTS = CatalystTestProject/CatalystTestProject.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = H8L8FUAVMN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -366,7 +457,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Dawon.CatalystTestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -378,7 +469,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CatalystTestProject/CatalystTestProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = H8L8FUAVMN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -393,9 +483,65 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Dawon.CatalystTestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8C56357324092A1000C86218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = H8L8FUAVMN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TestFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Dawon.TestFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8C56357424092A1000C86218 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = H8L8FUAVMN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TestFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Dawon.TestFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -416,6 +562,15 @@
 			buildConfigurations = (
 				8C5634E12408DAB100C86218 /* Debug */,
 				8C5634E22408DAB100C86218 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C56357224092A1000C86218 /* Build configuration list for PBXNativeTarget "TestFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C56357324092A1000C86218 /* Debug */,
+				8C56357424092A1000C86218 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
