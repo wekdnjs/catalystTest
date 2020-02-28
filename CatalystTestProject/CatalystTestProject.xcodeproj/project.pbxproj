@@ -13,7 +13,29 @@
 		8C5634D72408DAAE00C86218 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C5634D52408DAAE00C86218 /* Main.storyboard */; };
 		8C5634D92408DAB100C86218 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C5634D82408DAB100C86218 /* Assets.xcassets */; };
 		8C5634DC2408DAB100C86218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C5634DA2408DAB100C86218 /* LaunchScreen.storyboard */; };
+		8C5635582409199200C86218 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C56354E2409199200C86218 /* RxRelay.framework */; };
+		8C5635592409199200C86218 /* RxBlocking.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 8C56354F2409199200C86218 /* RxBlocking.framework.dSYM */; };
+		8C56355A2409199200C86218 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5635502409199200C86218 /* RxTest.framework */; };
+		8C56355B2409199200C86218 /* RxRelay.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 8C5635512409199200C86218 /* RxRelay.framework.dSYM */; };
+		8C56355C2409199200C86218 /* RxCocoa.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 8C5635522409199200C86218 /* RxCocoa.framework.dSYM */; };
+		8C56355D2409199200C86218 /* RxSwift.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 8C5635532409199200C86218 /* RxSwift.framework.dSYM */; };
+		8C56355E2409199200C86218 /* RxTest.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 8C5635542409199200C86218 /* RxTest.framework.dSYM */; };
+		8C56355F2409199200C86218 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5635552409199200C86218 /* RxCocoa.framework */; };
+		8C5635602409199200C86218 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5635562409199200C86218 /* RxSwift.framework */; };
+		8C5635612409199200C86218 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5635572409199200C86218 /* RxBlocking.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8C5635482409029D00C86218 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8C5634CC2408DAAE00C86218 /* CatalystTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatalystTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,6 +47,16 @@
 		8C5634DB2408DAB100C86218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C5634DD2408DAB100C86218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C5634E32408DAC800C86218 /* CatalystTestProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CatalystTestProject.entitlements; sourceTree = "<group>"; };
+		8C56354E2409199200C86218 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxRelay.framework; sourceTree = "<group>"; };
+		8C56354F2409199200C86218 /* RxBlocking.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = RxBlocking.framework.dSYM; sourceTree = "<group>"; };
+		8C5635502409199200C86218 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxTest.framework; sourceTree = "<group>"; };
+		8C5635512409199200C86218 /* RxRelay.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = RxRelay.framework.dSYM; sourceTree = "<group>"; };
+		8C5635522409199200C86218 /* RxCocoa.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = RxCocoa.framework.dSYM; sourceTree = "<group>"; };
+		8C5635532409199200C86218 /* RxSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = RxSwift.framework.dSYM; sourceTree = "<group>"; };
+		8C5635542409199200C86218 /* RxTest.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = RxTest.framework.dSYM; sourceTree = "<group>"; };
+		8C5635552409199200C86218 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = "<group>"; };
+		8C5635562409199200C86218 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
+		8C5635572409199200C86218 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxBlocking.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +64,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C5635602409199200C86218 /* RxSwift.framework in Frameworks */,
+				8C5635612409199200C86218 /* RxBlocking.framework in Frameworks */,
+				8C56355F2409199200C86218 /* RxCocoa.framework in Frameworks */,
+				8C56355A2409199200C86218 /* RxTest.framework in Frameworks */,
+				8C5635582409199200C86218 /* RxRelay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +94,7 @@
 		8C5634CE2408DAAE00C86218 /* CatalystTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				8C56354D2409199200C86218 /* Mac */,
 				8C5634E32408DAC800C86218 /* CatalystTestProject.entitlements */,
 				8C5634CF2408DAAE00C86218 /* AppDelegate.swift */,
 				8C5634D12408DAAE00C86218 /* SceneDelegate.swift */,
@@ -69,6 +107,24 @@
 			path = CatalystTestProject;
 			sourceTree = "<group>";
 		};
+		8C56354D2409199200C86218 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				8C56354E2409199200C86218 /* RxRelay.framework */,
+				8C56354F2409199200C86218 /* RxBlocking.framework.dSYM */,
+				8C5635502409199200C86218 /* RxTest.framework */,
+				8C5635512409199200C86218 /* RxRelay.framework.dSYM */,
+				8C5635522409199200C86218 /* RxCocoa.framework.dSYM */,
+				8C5635532409199200C86218 /* RxSwift.framework.dSYM */,
+				8C5635542409199200C86218 /* RxTest.framework.dSYM */,
+				8C5635552409199200C86218 /* RxCocoa.framework */,
+				8C5635562409199200C86218 /* RxSwift.framework */,
+				8C5635572409199200C86218 /* RxBlocking.framework */,
+			);
+			name = Mac;
+			path = Carthage/Build/Mac;
+			sourceTree = SOURCE_ROOT;
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,6 +135,7 @@
 				8C5634C82408DAAE00C86218 /* Sources */,
 				8C5634C92408DAAE00C86218 /* Frameworks */,
 				8C5634CA2408DAAE00C86218 /* Resources */,
+				8C5635482409029D00C86218 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -128,8 +185,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C5634DC2408DAB100C86218 /* LaunchScreen.storyboard in Resources */,
+				8C56355B2409199200C86218 /* RxRelay.framework.dSYM in Resources */,
 				8C5634D92408DAB100C86218 /* Assets.xcassets in Resources */,
 				8C5634D72408DAAE00C86218 /* Main.storyboard in Resources */,
+				8C56355C2409199200C86218 /* RxCocoa.framework.dSYM in Resources */,
+				8C5635592409199200C86218 /* RxBlocking.framework.dSYM in Resources */,
+				8C56355E2409199200C86218 /* RxTest.framework.dSYM in Resources */,
+				8C56355D2409199200C86218 /* RxSwift.framework.dSYM in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,8 +349,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CatalystTestProject/CatalystTestProject.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = H8L8FUAVMN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = CatalystTestProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -296,6 +365,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Dawon.CatalystTestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,6 +379,12 @@
 				CODE_SIGN_ENTITLEMENTS = CatalystTestProject/CatalystTestProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = H8L8FUAVMN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = CatalystTestProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -316,6 +392,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Dawon.CatalystTestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
