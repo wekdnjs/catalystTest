@@ -8,7 +8,7 @@ all=$(grep -l -R $searchstring $filepath)
 
 echo "all: " $all
 
-for file in all
+for file in $all
 do
   cp $file $file.bak
   sed -e "s/$searchstring/$replacestring/ig" $file > project.pbxproj
