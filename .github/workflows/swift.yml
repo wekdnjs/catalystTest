@@ -10,9 +10,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: check directory
-      run: ls
-    - name: Carthage checkout
-      run: carthage update --no-build
+      id: hi
+      run: |
+        cd ./../CatalystTestProject \
+        carthage update --no-build
+  
 #       working-directory: ./../CatalystTestProject
 #       shell: bash
     
