@@ -74,7 +74,6 @@
 		8C56356924092A1000C86218 /* TestFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C56356B24092A1000C86218 /* TestFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFramework.h; sourceTree = "<group>"; };
 		8C56356C24092A1000C86218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8C5635752409EED600C86218 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +103,6 @@
 		8C5634C32408DAAE00C86218 = {
 			isa = PBXGroup;
 			children = (
-				8C5635752409EED600C86218 /* Config.xcconfig */,
 				8C5634CE2408DAAE00C86218 /* CatalystTestProject */,
 				8C56356A24092A1000C86218 /* TestFramework */,
 				8C5634CD2408DAAE00C86218 /* Products */,
