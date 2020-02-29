@@ -1,4 +1,4 @@
-filepath="../CatalystTestProject/CatalystTestProject.xcodeproj"
+filepath="../CatalystTestProject.xcodeproj"
 searchstring="buildSettings = {"
 replacestring="buildSettings = { SUPPORTS_MACCATALYST = YES;"
 
