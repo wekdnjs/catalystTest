@@ -12,7 +12,7 @@ jobs:
     - name: Carthage checkout
       working-directory: ./../CatalystTestProject
       run: carthage update --no-build
-      shell: bash
+      shell: sh
     
 
       
