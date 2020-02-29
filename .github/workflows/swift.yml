@@ -9,9 +9,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: path refresh
-      run: cd ../
     - name: Carthage checkout
       run: carthage update --no-build
+      working-directory: ./
       
 
