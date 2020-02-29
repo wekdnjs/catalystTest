@@ -22,7 +22,7 @@ jobs:
       id: hihihi
       run: |
         cd CatalystTestProject \n
-        carthage update --no-checkout
+        carthage update
 #       working-directory: ./../CatalystTestProject
 #       shell: bash
     
