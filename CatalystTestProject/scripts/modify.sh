@@ -1,11 +1,14 @@
 #filepath="../CatalystTestProject.xcodeproj" /CatalystTestProject/
-filepath="./CatalystTestProject/CatalystTestProject.xcodeproj" 
+filepath="./CatalystTestProject/CatalystTestProject.xcodeproj"
 searchstring="buildSettings = {"
 replacestring="buildSettings = { SUPPORTS_MACCATALYST = YES;"
 
 i=0;
+all=$(grep -l -R $searchstring $filepath)
 
-for file in $(grep -l -R $searchstring $filepath)
+echo "all: " $all
+
+for file in all
 do
   cp $file $file.bak
   sed -e "s/$searchstring/$replacestring/ig" $file > project.pbxproj
