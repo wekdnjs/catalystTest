@@ -9,6 +9,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Carthage install
+      working-directory: ./../CatalystTestProject
+      run: brew install carthage
     - name: Carthage checkout
       working-directory: ./../CatalystTestProject
       run: carthage update --no-build
