@@ -9,7 +9,19 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Carthage checkout
-      run: carthage update --no-build
-#     - name: Run tests
-#       run: swift test -v
+    - name: check directory
+      id: hi
+      run: |
+        cd CatalystTestProject \n
+        carthage update --no-build
+    - uses: actions/checkout@v2
+    - name:  modify project
+      id: hihi
+      run: ./scripts/modify.sh
+  
+#       working-directory: ./../CatalystTestProject
+#       shell: bash
+    
+
+      
+
