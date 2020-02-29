@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Carthage checkout
-      working-directory: ./../
+      working-directory: ./../CatalystTestProject
       run: carthage update --no-build
     
 
