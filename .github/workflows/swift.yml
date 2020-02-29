@@ -18,7 +18,11 @@ jobs:
     - name:  modify project
       id: hihi
       run: ./CatalystTestProject/scripts/modify.sh
-  
+    - name: carthage build
+      id: hihihi
+      run: |
+        cd CatalystTestProject \n
+        carthage update --no-checkout
 #       working-directory: ./../CatalystTestProject
 #       shell: bash
     
