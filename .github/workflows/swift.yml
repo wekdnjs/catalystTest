@@ -10,7 +10,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Carthage checkout
-      run: carthage update --no-build
       working-directory: ./
+      run: carthage update --no-build
+    
+
       
 
