@@ -12,7 +12,7 @@ jobs:
     - name: check directory
       id: hi
       run: |
-        cd ./../CatalystTestProject \
+        cd CatalystTestProject \
         carthage update --no-build
   
 #       working-directory: ./../CatalystTestProject
