@@ -9,7 +9,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: path refresh
+      run: cd ../
     - name: Carthage checkout
       run: carthage update --no-build
-#     - name: Run tests
-#       run: swift test -v
+      
+
