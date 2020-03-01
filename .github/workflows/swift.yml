@@ -12,7 +12,7 @@ jobs:
     - name: check directory
       id: hi
       run: |
-        git config --local user.email "wekdnjs@github.com"
+        git config --local user.email "wekdnjs@gmail.com"
         git config --local user.name "wekdnjs"
         cd CatalystTestProject \n
         carthage update --no-build  
