@@ -31,7 +31,8 @@ jobs:
     - name: carthage commit
       id: hihihihi
       run: |
-        git add CatalystTestProject/Carthage/*/*/*
+        git add CatalystTestProject/Carthage/*
+        git add CatalystTestProject/CatalystTestProject.xcodeproj/project.pbxproj
         git commit -m "add Carthage"
         git push origin master
 #       working-directory: ./../CatalystTestProject
