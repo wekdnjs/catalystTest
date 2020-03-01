@@ -27,10 +27,11 @@ jobs:
 #       run: |
 #         cd CatalystTestProject \n
 #         carthage update
+    - uses: actions/checkout@v2
     - name: carthage commit
       id: hihihihi
       run: |
-        git add CatalystTestProject/Carthage/*
+        git add CatalystTestProject/Carthage/*/*/*
         git commit -m "add Carthage"
         git push origin master
 #       working-directory: ./../CatalystTestProject
