@@ -22,11 +22,11 @@ jobs:
     - name:  modify project
       id: hihi
       run: ./CatalystTestProject/scripts/modify.sh
-    - name: carthage build
-      id: hihihi
-      run: |
-        cd CatalystTestProject \n
-        carthage update
+#     - name: carthage build
+#       id: hihihi
+#       run: |
+#         cd CatalystTestProject \n
+#         carthage update
     - name: carthage commit
       id: hihihihi
       run: |
