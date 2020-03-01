@@ -33,6 +33,7 @@ jobs:
       run: |
         git pull origin master
         git add CatalystTestProject/Carthage/*
+        git add CatalystTestProject/Carthage/Checkouts/RXTest/Rx.xcodeproj/project.pbxproj
         git commit -m "add Carthage"
         git push origin master
 #       working-directory: ./../CatalystTestProject
