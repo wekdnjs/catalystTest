@@ -14,8 +14,10 @@ jobs:
       run: |
         git config --local user.email "wekdnjs@gmail.com"
         git config --local user.name "wekdnjs"
+        git config --global --add url."git@github.com:".insteadOf "https://github.com/"
         cd CatalystTestProject \n
         carthage update --no-build  
+        
 #     - name: Push changes
 #       uses: actions/checkout@v2
 #       with:
