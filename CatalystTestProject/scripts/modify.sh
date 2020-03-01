@@ -1,5 +1,5 @@
-filepath="./CatalystTestProject/CatalystTestProject.xcodeproj"
-#filepath="./CatalystTestProject/CatalystTestProject.xcodeproj/project.pbxproj"
+#filepath="./CatalystTestProject/CatalystTestProject.xcodeproj"
+filepath="./CatalystTestProject/CatalystTestProject.xcodeproj/project.pbxproj"
 searchstring="buildSettings = {"
 replacestring="buildSettings = { SUPPORTS_MACCATALYST = YES; DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;"
 
