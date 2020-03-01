@@ -16,6 +16,10 @@ jobs:
         git config --local user.name "GitHub Action" \n
         cd CatalystTestProject \n
         carthage update --no-build
+    - name: Push changes
+      uses: actions/checkout@v2
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
     - uses: actions/checkout@v2
     - name:  modify project
       id: hihi
