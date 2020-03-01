@@ -12,8 +12,17 @@ jobs:
     - name: check directory
       id: hi
       run: |
+        ssh-keygen -R github.com
+        ssh-keyscan -t rsa domain.com >> ~/.ssh/known_hosts
+        git config --local user.email "wekdnjs@gmail.com"
+        git config --local user.name "wekdnjs"
+        git config --global --add url."git@github.com:".insteadOf "https://github.com/"
         cd CatalystTestProject \n
-        carthage update --no-build
+        carthage update --no-build  
+    - name: Push changes
+      uses: actions/checkout@v2
+      with:
+        github_token: AAAAB3NzaC1yc2EAAAADAQABAAACAQDKKmORxQinXlQMhRQv2DLA67CQj39MEfstQdL0q5rguuL5smN4iD/YdKkVkX0uNQ/JOXsXEk77ROvjPtTvWC2IIyL/IyZ/k4Gjiu3NV7jVRbTzDmuDpGrE95zE1DVHHqcYEA1RFg0/jPktEXjDpJvCvT5LkXTzNhUfaCqT8ku1uVtmA28NjuLuG8qfPFrwM4j375VUS+lXWqWDaVREoGzaZArc5rpLgdE6xwwm2nCqzdBRlZes4OiuAPvacDqsWd756ZE3A4M/PJSC+UfCTSKnLQ8R7ZXhHHx+729UWIx+vBqEVu1LUG08OgLdGTJB/GsMf8J3euGwjX2klbgbp6r8luFRlp4Xz+jkg4Ofl1UtHpCxBb3vzWTCQa0K74cc1KLz7AXu795uKpwSlGxyFjCTfN6qquwZ0G3UIJj6wiFbTKsT9EFRo08znT5zTMYHAgfgHhWexuEcMIbTYvdn2J/buB8LQk7QtGX64gJkjK7tyZ4frfE2R7XzyAOm5ISFHodAJTPEzkpZGKt1ZycTdPhAniL9WDJ/YrAsQoaoDhNZq95ScS0pBC34rUMtGXrGs6+yVLBpY8nH6+Xm3hQ79TYmUtaOtsa5A+drabEV/eh26hoz986eqB6FuZnjQItl0Vt8Rfk6n8wouPtk+jeGAwTFbKUKHBcsdQVNZknIKdHu2Q==
     - uses: actions/checkout@v2
     - name:  modify project
       id: hihi
@@ -31,7 +40,7 @@ jobs:
         git push origin master
 #       working-directory: ./../CatalystTestProject
 #       shell: bash
-    
+#     ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDKKmORxQinXlQMhRQv2DLA67CQj39MEfstQdL0q5rguuL5smN4iD/YdKkVkX0uNQ/JOXsXEk77ROvjPtTvWC2IIyL/IyZ/k4Gjiu3NV7jVRbTzDmuDpGrE95zE1DVHHqcYEA1RFg0/jPktEXjDpJvCvT5LkXTzNhUfaCqT8ku1uVtmA28NjuLuG8qfPFrwM4j375VUS+lXWqWDaVREoGzaZArc5rpLgdE6xwwm2nCqzdBRlZes4OiuAPvacDqsWd756ZE3A4M/PJSC+UfCTSKnLQ8R7ZXhHHx+729UWIx+vBqEVu1LUG08OgLdGTJB/GsMf8J3euGwjX2klbgbp6r8luFRlp4Xz+jkg4Ofl1UtHpCxBb3vzWTCQa0K74cc1KLz7AXu795uKpwSlGxyFjCTfN6qquwZ0G3UIJj6wiFbTKsT9EFRo08znT5zTMYHAgfgHhWexuEcMIbTYvdn2J/buB8LQk7QtGX64gJkjK7tyZ4frfE2R7XzyAOm5ISFHodAJTPEzkpZGKt1ZycTdPhAniL9WDJ/YrAsQoaoDhNZq95ScS0pBC34rUMtGXrGs6+yVLBpY8nH6+Xm3hQ79TYmUtaOtsa5A+drabEV/eh26hoz986eqB6FuZnjQItl0Vt8Rfk6n8wouPtk+jeGAwTFbKUKHBcsdQVNZknIKdHu2Q==
 
       
 
