@@ -12,9 +12,9 @@ jobs:
     - name: check directory
       id: hi
       run: |
-        git config --local user.email "wekdnjs@github.com" \n
-        git config --local user.name "GitHub Action" \n
-        git config --global --add url."git@github.com:".insteadOf "https://github.com/" \n
+        git config --local user.email "wekdnjs@github.com"
+        git config --local user.name "GitHub Action"
+        git config --global --add url."git@github.com:".insteadOf "https://github.com/"
         cd CatalystTestProject \n
         carthage update --no-build  
 #     - name: Push changes
