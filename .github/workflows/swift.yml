@@ -12,7 +12,6 @@ jobs:
     - name: check directory
       id: hi
       run: |
-        ssh-keyscan -H github.com >> ~/.ssh/known_hosts
         git config --local user.email "wekdnjs@gmail.com"
         git config --local user.name "wekdnjs"
         git config --global --add url."git@github.com:".insteadOf "https://github.com/"
